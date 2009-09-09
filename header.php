@@ -10,7 +10,7 @@
 	<link rel="pingback" href="<?php bloginfo('pingback_url') ?>" />
 </head>
 
-<body class="<?php sandbox_body_class() ?>">
+<body <?php body_class() ?>>
 
 <div id="wrapper" class="hfeed">
 
