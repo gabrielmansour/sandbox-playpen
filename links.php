@@ -24,7 +24,7 @@ Template Name: Links Page
 				</div>
 			</div><!-- .post -->
 
-<?php if ( get_post_custom_values('comments') ) comments_template() // Add a key/value of "comments" to enable comments on pages! ?>
+<?php if ( get_post_custom_values('comments') ) comments_template('', true) // Add a key/value of "comments" to enable comments on pages! ?>
 
 		</div><!-- #content -->
 	</div><!-- #container -->

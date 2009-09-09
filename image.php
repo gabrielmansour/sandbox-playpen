@@ -46,7 +46,7 @@
 				<div class="nav-next"><?php next_image_link() ?></div>
 			</div>
 
-<?php comments_template() ?>
+<?php comments_template('', true) ?>
 
 		</div><!-- #content -->
 	</div><!-- #container -->

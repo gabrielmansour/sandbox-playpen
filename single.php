@@ -49,7 +49,7 @@
 				<div class="nav-next"><?php next_post_link( '%link', '%title <span class="meta-nav">&raquo;</span>' ) ?></div>
 			</div>
 
-<?php comments_template() ?>
+<?php comments_template('', true) ?>
 
 		</div><!-- #content -->
 	</div><!-- #container -->

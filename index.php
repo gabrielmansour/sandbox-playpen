@@ -29,7 +29,7 @@
 				</div>
 			</div><!-- .post -->
 
-<?php comments_template() ?>
+<?php comments_template('', true) ?>
 
 <?php endwhile; ?>
 
