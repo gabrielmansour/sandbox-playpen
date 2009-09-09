@@ -31,7 +31,7 @@ foreach ( $comments as $comment )
 					<ol>
 <?php foreach ($comments as $comment) : ?>
 <?php if ( get_comment_type() == "comment" ) : ?>
-						<li id="comment-<?php comment_ID() ?>" class="<?php sandbox_comment_class() ?>">
+						<li id="comment-<?php comment_ID() ?>" <?php comment_class() ?>>
 							<div class="comment-author vcard"><?php sandbox_commenter_link() ?></div>
 							<div class="comment-meta"><?php printf(__('Posted %1$s at %2$s <span class="meta-sep">|</span> <a href="%3$s" title="Permalink to this comment">Permalink</a>', 'sandbox'),
 										get_comment_date(),
@@ -58,7 +58,7 @@ foreach ( $comments as $comment )
 <?php foreach ( $comments as $comment ) : ?>
 <?php if ( get_comment_type() != "comment" ) : ?>
 
-						<li id="comment-<?php comment_ID() ?>" class="<?php sandbox_comment_class() ?>">
+						<li id="comment-<?php comment_ID() ?>" <?php comment_class() ?>>
 							<div class="comment-author"><?php printf(__('By %1$s on %2$s at %3$s', 'sandbox'),
 									get_comment_author_link(),
 									get_comment_date(),
