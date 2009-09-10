@@ -64,9 +64,10 @@ form#commentform .form-label {
 margin:1em 0 0;
 }
 
-form#commentform span.required {
+form#commentform em.required {
 background:#fff;
 color:#c30;
+font-style:normal;
 }
 
 form#commentform,form#commentform p {

@@ -72,12 +72,12 @@ foreach ( array('comment'=>0,'pings'=>0) as $type => $null)
 
 <?php else : ?>
 
-							<p id="comment-notes"><?php _e( 'Your email is <em>never</em> shared.', 'sandbox' ) ?> <?php if ($req) _e( 'Required fields are marked <span class="required">*</span>', 'sandbox' ) ?></p>
+							<p id="comment-notes"><?php _e( 'Your email is <em>never</em> shared.', 'sandbox' ) ?> <?php if ($req) _e( 'Required fields are marked <em class="required">*</em>', 'sandbox' ) ?></p>
 
-							<div class="form-label"><label for="author"><?php _e( 'Name', 'sandbox' ) ?></label> <?php if ($req) _e( '<span class="required">*</span>', 'sandbox' ) ?></div>
+							<div class="form-label"><label for="author"><?php _e( 'Name', 'sandbox' ) ?></label> <?php if ($req) _e( '<em class="required">*</em>', 'sandbox' ) ?></div>
 							<div class="form-input"><input id="author" name="author" class="text<?php if ($req) echo ' required" aria-required="true' ?>" type="text" value="<?php echo esc_attr($comment_author) ?>" size="30" maxlength="50" tabindex="3" /></div>
 
-							<div class="form-label"><label for="email"><?php _e( 'Email', 'sandbox' ) ?></label> <?php if ($req) _e( '<span class="required">*</span>', 'sandbox' ) ?></div>
+							<div class="form-label"><label for="email"><?php _e( 'Email', 'sandbox' ) ?></label> <?php if ($req) _e( '<em class="required">*</em>', 'sandbox' ) ?></div>
 							<div class="form-input"><input id="email" name="email" class="text<?php if ($req) echo ' required" aria-required="true'; ?>" type="text" value="<?php echo esc_attr($comment_author_email) ?>" size="30" maxlength="50" tabindex="4" /></div>
 
 							<div class="form-label"><label for="url"><?php _e( 'Website', 'sandbox' ) ?></label></div>
