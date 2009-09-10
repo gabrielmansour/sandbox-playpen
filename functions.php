@@ -285,4 +285,10 @@ add_filter( 'archive_meta', 'convert_chars' );
 add_filter( 'archive_meta', 'wpautop' );
 
 // Remember: the Sandbox is for play.
+
+// comment threading javascript
+function include_comment_reply_js_tag() {
+  if ( is_singular() ) wp_enqueue_script('comment-reply');
+}
+add_action('wp_head', 'include_comment_reply_js_tag', 1);
 ?>
